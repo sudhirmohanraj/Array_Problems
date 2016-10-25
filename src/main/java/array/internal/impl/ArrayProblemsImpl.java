@@ -146,4 +146,22 @@ public class ArrayProblemsImpl implements ArrayProblems {
         }
         return output;
     }
+
+    @Override
+    public Integer maxContigious(int[] a) {
+
+        int cs = 0;
+        int ms =0;
+        for(int l = 0; l<a.length; l++){
+            cs = a[l];
+            for(int m=l+1;m<a.length;m++) {
+                cs = a[m]+cs;
+                if (cs > ms) {
+                    ms = cs;
+                }
+            }
+        }
+        System.out.println(ms);
+        return ms;
+    }
 }

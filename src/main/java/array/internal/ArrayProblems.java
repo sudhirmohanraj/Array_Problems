@@ -21,4 +21,6 @@ public interface ArrayProblems {
      */
     public ArrayList<Integer> findIntersection(int[] a, int[] b);
 
+    public Integer maxContigious(int[] a);
+
 }

@@ -150,8 +150,16 @@ public class ArrayProblemsImplTest {
         output = arrayProblemsImpl.findIntersection(dm_delete_1, backlog1);
 
         for (int i = 0; i < output.size(); i++) {
-            System.out.println(output.get(i));
+            //System.out.println(output.get(i));
         }
 
     }
+
+        @Test
+        public void testContiguousSum(){
+                //arrayProblemsImpl.maxContigious(new int[]{1, 2, 3, 4});
+                arrayProblemsImpl.maxContigious(new int[]{-2,1,-3,4,-1,2,1,-5,4});
+                arrayProblemsImpl.maxContigious(new int[]{2 ,-1 ,2 ,3 ,4 ,-5});
+        }
+
 }
